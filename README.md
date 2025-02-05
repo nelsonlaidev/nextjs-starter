@@ -36,6 +36,18 @@ The following extensions are recommended for this project:
 - `bradlc.vscode-tailwindcss`: Tailwind CSS
 - `streetsidesoftware.code-spell-checker`: Code Spell Checker
 
+### GitHub Actions
+
+This project includes GitHub Actions workflows to automate code quality checks. The CI workflow runs on pull requests to the main branch and includes the following checks:
+
+- ESLint: Lints the code for style and syntax issues
+- TypeScript: Performs type checking
+- Prettier: Checks code formatting
+- Spelling: Checks for spelling errors
+- Knip: Verifies code formatting and style consistency
+
+These checks ensure that the code meets the project's quality standards before merging into the main branch.
+
 ### Usage Guide
 
 1. Install dependencies using bun:
