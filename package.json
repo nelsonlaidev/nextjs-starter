@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "check": "bun lint && bun type-check && bun format:check && bun check:spelling && bun check:knip",
+    "check": "pnpm lint && pnpm type-check && pnpm format:check && pnpm check:spelling && pnpm check:knip",
     "check:knip": "knip",
     "check:spelling": "cspell -c .cspell.json --no-progress --no-summary --no-must-find-files --unique",
     "clean": "rm -rf .next",
@@ -38,8 +38,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "@tailwindcss/postcss": "^4.0.0",
-    "@tszhong0411/eslint-config": "^0.1.27",
+    "@tailwindcss/postcss": "^4.0.3",
+    "@tszhong0411/eslint-config": "^0.1.29",
     "@tszhong0411/prettier-config": "^0.0.14",
     "@tszhong0411/tsconfig": "^0.0.10",
     "@types/node": "^22.13.1",
@@ -57,15 +57,20 @@
     "tailwindcss": "^4.0.3",
     "typescript": "^5.7.3"
   },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
   "lint-staged": {
     "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix",
     "**/*": [
       "prettier --write --ignore-unknown",
-      "bun check:spelling"
+      "pnpm check:spelling"
     ]
   },
+  "packageManager": "pnpm@9.15.4",
   "simple-git-hooks": {
-    "pre-commit": "bun lint-staged",
-    "commit-msg": "bun commitlint --edit $1 && bun check:spelling $1"
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "pnpm commitlint --edit $1 && pnpm check:spelling $1"
   }
 }
