@@ -8,7 +8,7 @@ This is a Next.js starter template that includes basic configurations and struct
 - React 19
 - TailwindCSS v4
 
-### Configuration
+## Configuration
 
 - next.config.ts: Next.js configuration
 - tsconfig.json: TypeScript configuration
@@ -21,7 +21,7 @@ This is a Next.js starter template that includes basic configurations and struct
 - commitlint.config.ts: Git commit message linting
 - simple-git-hooks: Git hooks for code quality
 
-### Project Structure
+## Project Structure
 
 ```
 src/
@@ -31,7 +31,7 @@ src/
 │   └── page.tsx
 ```
 
-### Recommended VSCode Extensions
+## Recommended VSCode Extensions
 
 The following extensions are recommended for this project:
 
@@ -40,7 +40,7 @@ The following extensions are recommended for this project:
 - `bradlc.vscode-tailwindcss`: Tailwind CSS
 - `streetsidesoftware.code-spell-checker`: Code Spell Checker
 
-### GitHub Actions
+## GitHub Actions
 
 This project includes GitHub Actions workflows to automate code quality checks. The CI workflow runs on pull requests to the main branch and includes the following checks:
 
@@ -52,7 +52,7 @@ This project includes GitHub Actions workflows to automate code quality checks. 
 
 These checks ensure that the code meets the project's quality standards before merging into the main branch.
 
-### Usage Guide
+## Usage Guide
 
 1. Install dependencies using bun:
    ```bash
@@ -71,10 +71,10 @@ These checks ensure that the code meets the project's quality standards before m
    bun run start
    ```
 
-### Notes
+## Notes
 
 Please search for `TODO` in the project to fill in necessary fields such as project name, description, and repository URL.
 
-### License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
