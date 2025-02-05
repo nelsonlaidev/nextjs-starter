@@ -4,6 +4,10 @@ This is a Next.js starter template that includes basic configurations and struct
 
 ## What's Included
 
+- Next.js 15
+- React 19
+- TailwindCSS v4
+
 ### Configuration
 
 - next.config.ts: Next.js configuration
