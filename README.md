@@ -44,7 +44,7 @@ This project includes GitHub Actions workflows to automate code quality checks. 
 - TypeScript: Performs type checking
 - Prettier: Checks code formatting
 - Spelling: Checks for spelling errors
-- Knip: Verifies code formatting and style consistency
+- Knip: Scans for unused files, exports and dependencies
 
 These checks ensure that the code meets the project's quality standards before merging into the main branch.
 
