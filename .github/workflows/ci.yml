@@ -17,7 +17,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run ESLint
-        run: pnpm lint
+        run: bun lint
 
   types:
     name: TypeScript
@@ -30,7 +30,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run type check
-        run: pnpm type-check
+        run: bun type-check
 
   prettier:
     name: Prettier
@@ -43,7 +43,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run Prettier
-        run: pnpm format:check
+        run: bun format:check
 
   spelling:
     name: Spelling
@@ -56,7 +56,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run spelling check
-        run: pnpm check:spelling
+        run: bun check:spelling
 
   knip:
     name: Knip
@@ -69,4 +69,4 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run Knip
-        run: pnpm check:knip
+        run: bun check:knip

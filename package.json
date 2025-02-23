@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "check": "pnpm lint && pnpm type-check && pnpm format:check && pnpm check:spelling && pnpm check:knip",
+    "check": "bun lint && bun type-check && bun format:check && bun check:spelling && bun check:knip",
     "check:knip": "knip",
     "check:spelling": "cspell -c .cspell.json --no-progress --no-summary --no-must-find-files --unique",
     "clean": "rm -rf .next",
@@ -31,7 +31,7 @@
     }
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -64,12 +64,12 @@
     "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix",
     "**/*": [
       "prettier --write --ignore-unknown",
-      "pnpm check:spelling"
+      "bun check:spelling"
     ]
   },
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "bun@1.2.2",
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged",
-    "commit-msg": "pnpm commitlint --edit $1 && pnpm check:spelling $1"
+    "pre-commit": "bun lint-staged",
+    "commit-msg": "bun commitlint --edit $1 && bun check:spelling $1"
   }
 }
