@@ -1,4 +1,4 @@
-import { type KnipConfig } from 'knip'
+import type { KnipConfig } from 'knip'
 
 const config: KnipConfig = {
   ignoreDependencies: ['prettier-plugin-*', 'tailwindcss']
