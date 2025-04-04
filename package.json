@@ -21,7 +21,7 @@
     "format:write": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore .",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint --fix .",
-    "prepare": "simple-git-hooks",
+    "prepare": "husky",
     "start": "next start",
     "type-check": "tsc --noEmit"
   },
@@ -48,12 +48,12 @@
     "cspell": "^8.18.1",
     "cz-git": "^1.11.1",
     "eslint": "^9.23.0",
+    "husky": "^9.1.7",
     "knip": "^5.46.5",
     "lint-staged": "^15.5.0",
     "postcss": "^8.5.3",
     "postcss-load-config": "^6.0.1",
     "prettier": "^3.5.3",
-    "simple-git-hooks": "^2.12.1",
     "tailwindcss": "^4.1.2",
     "typescript": "^5.8.2"
   },
@@ -67,9 +67,5 @@
       "bun check:spelling"
     ]
   },
-  "packageManager": "bun@1.2.8",
-  "simple-git-hooks": {
-    "pre-commit": "bun lint-staged",
-    "commit-msg": "bun commitlint --edit $1 && bun check:spelling $1"
-  }
+  "packageManager": "bun@1.2.8"
 }

@@ -19,7 +19,7 @@ This is a Next.js starter template that includes basic configurations and struct
 - .npmrc: npm configuration
 - .nvmrc: Node.js version management
 - commitlint.config.ts: Git commit message linting
-- simple-git-hooks: Git hooks for code quality
+- husky: Git hooks for code quality
 
 ## Project Structure
 
