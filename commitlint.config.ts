@@ -1,4 +1,4 @@
-import { defineConfig } from 'cz-git'
+import { defineConfig } from 'czg'
 
 export default defineConfig({
   extends: ['@commitlint/config-conventional']
