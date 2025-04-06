@@ -16,6 +16,7 @@
     "check:knip": "knip",
     "check:spelling": "cspell -c .cspell.json --no-progress --no-summary --no-must-find-files --unique",
     "clean": "rm -rf .next",
+    "cz": "cross-env NODE_OPTIONS='--experimental-transform-types --disable-warning ExperimentalWarning' czg",
     "dev": "next dev --turbo",
     "format:check": "prettier --cache --check --ignore-path .gitignore --ignore-path .prettierignore .",
     "format:write": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore .",
@@ -24,11 +25,6 @@
     "prepare": "husky",
     "start": "next start",
     "type-check": "tsc --noEmit"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-git"
-    }
   },
   "dependencies": {
     "next": "^15.2.4",
@@ -45,8 +41,10 @@
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
+    "cross-env": "^7.0.3",
     "cspell": "^8.18.1",
     "cz-git": "^1.11.1",
+    "czg": "^1.11.1",
     "eslint": "^9.23.0",
     "husky": "^9.1.7",
     "knip": "^5.46.5",
