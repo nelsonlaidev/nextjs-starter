@@ -10,12 +10,13 @@
   "exclude": ["node_modules"],
   "extends": "@tszhong0411/tsconfig/nextjs.json",
   "include": [
-    "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "postcss.config.mjs",
-    "eslint.config.mjs",
-    "prettier.config.js"
+    "**/*.mts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
   ]
 }

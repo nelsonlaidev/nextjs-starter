@@ -20,7 +20,6 @@
         "@types/react-dom": "^19.1.1",
         "cross-env": "^7.0.3",
         "cspell": "^8.18.1",
-        "cz-git": "^1.11.1",
         "czg": "^1.11.1",
         "eslint": "^9.23.0",
         "husky": "^9.1.7",
@@ -560,8 +559,6 @@
     "cspell-trie-lib": ["cspell-trie-lib@8.18.1", "", { "dependencies": { "@cspell/cspell-pipe": "8.18.1", "@cspell/cspell-types": "8.18.1", "gensequence": "^7.0.0" } }, "sha512-UaB36wsyp2eWeMtrbS6Q2t2WFvpedmGXJ879yHn9qKD7ViyUpI4cAbh6v7gWMUu+gjqCulXtke64k1ddmBihPQ=="],
 
     "csstype": ["csstype@3.1.3", "", {}, "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="],
-
-    "cz-git": ["cz-git@1.11.1", "", {}, "sha512-QIhpsX8blMydkGcSSlSb4VKvu4qHNtxAWeN0N3TWDfQw7VbVHMLlAwmLm/YxVk60KKPy42O5ihe7E0gosTG2kg=="],
 
     "czg": ["czg@1.11.1", "", { "bin": { "czg": "bin/index.js", "git-czg": "bin/index.js" } }, "sha512-2k/Dh7MiRKMUEtQO3kWVkgPmvf0wZlxyS7Svr8cpI2ScATkLuA5uWa2ukJnTXG6Pwe73vFhGO9jd9IiE3NOM5g=="],
 
