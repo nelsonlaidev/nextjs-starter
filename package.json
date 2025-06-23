@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "check": "bun lint && bun type-check && bun format:check && bun check:spelling && bun check:knip",
+    "check": "pnpm lint && pnpm type-check && pnpm format:check && pnpm check:spelling && pnpm check:knip",
     "check:knip": "knip",
     "check:spelling": "cspell -c .cspell.json --no-progress --no-summary --no-must-find-files --unique",
     "clean": "rm -rf .next",
@@ -61,8 +61,8 @@
     "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix",
     "**/*": [
       "prettier --write --ignore-unknown",
-      "bun check:spelling"
+      "pnpm check:spelling"
     ]
   },
-  "packageManager": "bun@1.2.8"
+  "packageManager": "pnpm@10.7.1"
 }

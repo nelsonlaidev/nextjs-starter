@@ -54,21 +54,21 @@ These checks ensure that the code meets the project's quality standards before m
 
 ## Usage Guide
 
-1. Install dependencies using bun:
+1. Install dependencies using pnpm:
    ```bash
-   bun install
+   pnpm install
    ```
 2. Start the development server:
    ```bash
-   bun run dev
+   pnpm run dev
    ```
 3. Build the project:
    ```bash
-   bun run build
+   pnpm run build
    ```
 4. Start the production server:
    ```bash
-   bun run start
+   pnpm run start
    ```
 
 ## Notes
