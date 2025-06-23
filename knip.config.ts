@@ -1,7 +1,10 @@
 import type { KnipConfig } from 'knip'
 
 const config: KnipConfig = {
-  ignoreDependencies: ['prettier-plugin-*', 'tailwindcss']
+  compilers: {
+    css: (text: string) =>
+      [...text.matchAll(/(?<=@)(import|plugin)[^;]+/g)].join('\n').replace('plugin', 'import')
+  }
 }
 
 export default config
