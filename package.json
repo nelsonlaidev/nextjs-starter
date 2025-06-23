@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "check": "bun lint && bun type-check && bun format:check && bun check:spelling && bun check:knip",
+    "check": "pnpm lint && pnpm type-check && pnpm format:check && pnpm check:spelling && pnpm check:knip",
     "check:knip": "knip",
     "check:spelling": "cspell -c .cspell.json --no-progress --no-summary --no-must-find-files --unique",
     "clean": "rm -rf .next",
@@ -27,32 +27,34 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "^15.2.4",
+    "next": "^15.3.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
-    "@tailwindcss/postcss": "^4.1.2",
-    "@tszhong0411/eslint-config": "^0.1.36",
-    "@tszhong0411/prettier-config": "^0.0.15",
-    "@tszhong0411/tsconfig": "^0.0.13",
-    "@types/node": "^22.14.0",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@tailwindcss/postcss": "^4.1.10",
+    "@tszhong0411/eslint-config": "^0.1.37",
+    "@tszhong0411/prettier-config": "^0.0.18",
+    "@tszhong0411/prettier-plugin-package-json": "^1.0.0",
+    "@tszhong0411/tsconfig": "^0.0.14",
+    "@types/node": "^24.0.3",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "cross-env": "^7.0.3",
-    "cspell": "^8.18.1",
-    "czg": "^1.11.1",
-    "eslint": "^9.23.0",
+    "cspell": "^9.1.1",
+    "czg": "^1.11.2",
+    "eslint": "^9.29.0",
     "husky": "^9.1.7",
-    "knip": "^5.46.5",
-    "lint-staged": "^15.5.0",
+    "knip": "^5.61.2",
+    "lint-staged": "^16.1.2",
     "postcss": "^8.5.3",
     "postcss-load-config": "^6.0.1",
-    "prettier": "^3.5.3",
-    "tailwindcss": "^4.1.2",
-    "typescript": "^5.8.2"
+    "prettier": "^3.6.0",
+    "prettier-plugin-tailwindcss": "^0.6.13",
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=22"
@@ -61,8 +63,8 @@
     "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix",
     "**/*": [
       "prettier --write --ignore-unknown",
-      "bun check:spelling"
+      "pnpm check:spelling"
     ]
   },
-  "packageManager": "bun@1.2.8"
+  "packageManager": "pnpm@10.12.2"
 }
