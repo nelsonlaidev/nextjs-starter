@@ -20,6 +20,7 @@
     "dev": "next dev --turbo",
     "format:check": "prettier --cache --check --ignore-path .gitignore --ignore-path .prettierignore .",
     "format:write": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore .",
+    "preinstall": "npx --yes only-allow pnpm",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint --fix .",
     "prepare": "husky",
