@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
 
-import './globals.css'
+import '../styles/globals.css'
 
 import { Geist } from 'next/font/google'
 
 const geistSans = Geist({
-  variable: '--font-geist-sans',
   subsets: ['latin']
 })
 
@@ -20,7 +19,7 @@ type RootLayoutProps = Readonly<{
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <html lang='en' className={geistSans.variable}>
+    <html lang='en' className={geistSans.className}>
       <body>{children}</body>
     </html>
   )
