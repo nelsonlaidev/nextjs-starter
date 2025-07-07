@@ -1,14 +1,14 @@
 {
-  "private": true,
   "name": "TODO: Add a name",
   "version": "0.0.0",
+  "private": true,
   "description": "TODO: Add a description",
-  "license": "MIT",
-  "author": "tszhong0411 <me@nelsonlai.me> (https://github.com/tszhong0411/)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tszhong0411/TODO: Add a name.git"
   },
+  "license": "MIT",
+  "author": "tszhong0411 <me@nelsonlai.me> (https://github.com/tszhong0411/)",
   "type": "module",
   "scripts": {
     "build": "next build",
@@ -27,6 +27,13 @@
     "start": "next start",
     "type-check": "tsc --noEmit"
   },
+  "lint-staged": {
+    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix",
+    "**/*": [
+      "prettier --write --ignore-unknown",
+      "pnpm check:spelling"
+    ]
+  },
   "dependencies": {
     "next": "^15.3.4",
     "react": "^19.1.0",
@@ -37,8 +44,6 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@tailwindcss/postcss": "^4.1.10",
     "@tszhong0411/eslint-config": "^0.1.37",
-    "@tszhong0411/prettier-config": "^0.0.18",
-    "@tszhong0411/prettier-plugin-package-json": "^1.0.0",
     "@types/node": "^24.0.3",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
@@ -52,19 +57,13 @@
     "postcss": "^8.5.3",
     "postcss-load-config": "^6.0.1",
     "prettier": "^3.6.0",
+    "prettier-plugin-packagejson": "^2.5.18",
     "prettier-plugin-tailwindcss": "^0.6.13",
     "tailwindcss": "^4.1.10",
     "typescript": "^5.8.3"
   },
+  "packageManager": "pnpm@10.12.2",
   "engines": {
     "node": ">=22"
-  },
-  "lint-staged": {
-    "*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}": "eslint --fix",
-    "**/*": [
-      "prettier --write --ignore-unknown",
-      "pnpm check:spelling"
-    ]
-  },
-  "packageManager": "pnpm@10.12.2"
+  }
 }
