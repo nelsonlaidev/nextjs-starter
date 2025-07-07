@@ -36,9 +36,6 @@ importers:
       '@tszhong0411/prettier-plugin-package-json':
         specifier: ^1.0.0
         version: 1.0.0(prettier@3.6.0)
-      '@tszhong0411/tsconfig':
-        specifier: ^0.0.14
-        version: 0.0.14(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
       '@types/node':
         specifier: ^24.0.3
         version: 24.0.3
@@ -905,12 +902,6 @@ packages:
     resolution: {integrity: sha512-zjJ1JQriTb9gFTMEFyo8VPOKhKgUSMUVldiGN6pERZivJr7TQjdUsdn4Li7Zfu01h//jHhPKnbtqsYHmrG0p0Q==}
     peerDependencies:
       prettier: 3.x
-
-  '@tszhong0411/tsconfig@0.0.14':
-    resolution: {integrity: sha512-Iw2+h8zQzP1OQ1blewM+zr/hSlH1Ri68i47QB8PARxRT4FUH5stIsQiBzwxSLBS2mjpVr5AeYVhOUgFxsyGitQ==}
-    peerDependencies:
-      next: ^15
-      typescript: 5.x
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -3964,11 +3955,6 @@ snapshots:
     dependencies:
       prettier: 3.6.0
       prettier-package-json: 2.8.0
-
-  '@tszhong0411/tsconfig@0.0.14(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)':
-    dependencies:
-      next: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      typescript: 5.8.3
 
   '@tybys/wasm-util@0.9.0':
     dependencies:

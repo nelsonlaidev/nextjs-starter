@@ -39,7 +39,6 @@
     "@tszhong0411/eslint-config": "^0.1.37",
     "@tszhong0411/prettier-config": "^0.0.18",
     "@tszhong0411/prettier-plugin-package-json": "^1.0.0",
-    "@tszhong0411/tsconfig": "^0.0.14",
     "@types/node": "^24.0.3",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
