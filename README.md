@@ -12,10 +12,10 @@ This is a Next.js starter template that includes basic configurations and struct
 
 - next.config.ts: Next.js configuration
 - tsconfig.json: TypeScript configuration
-- eslint.config.mjs: ESLint configuration
+- eslint.config.ts: ESLint configuration
 - prettier.config.js: Prettier configuration
-- .cspell.json: Spell checking configuration
-- editorconfig: Code style consistency
+- cspell.config.yaml: Spell checking configuration
+- .editorconfig: Code style consistency
 - .npmrc: npm configuration
 - .nvmrc: Node.js version management
 - commitlint.config.ts: Git commit message linting
@@ -37,6 +37,7 @@ The following extensions are recommended for this project:
 
 - `editorconfig.editorconfig`: EditorConfig
 - `dbaeumer.vscode-eslint`: ESLint
+- `esbenp.prettier-vscode`: Prettier
 - `bradlc.vscode-tailwindcss`: Tailwind CSS
 - `streetsidesoftware.code-spell-checker`: Code Spell Checker
 
@@ -60,20 +61,16 @@ These checks ensure that the code meets the project's quality standards before m
    ```
 2. Start the development server:
    ```bash
-   pnpm run dev
+   pnpm dev
    ```
 3. Build the project:
    ```bash
-   pnpm run build
+   pnpm build
    ```
 4. Start the production server:
    ```bash
-   pnpm run start
+   pnpm start
    ```
-
-## Notes
-
-Please search for `TODO` in the project to fill in necessary fields such as project name, description, and repository URL.
 
 ## License
 
