@@ -56,21 +56,28 @@ These checks ensure that the code meets the project's quality standards before m
 ## Usage Guide
 
 1. Install dependencies using pnpm:
-   ```bash
-   pnpm install
-   ```
+
+```bash
+pnpm install
+```
+
 2. Start the development server:
-   ```bash
-   pnpm dev
-   ```
+
+```bash
+pnpm dev
+```
+
 3. Build the project:
-   ```bash
-   pnpm build
-   ```
+
+```bash
+pnpm build
+```
+
 4. Start the production server:
-   ```bash
-   pnpm start
-   ```
+
+```bash
+pnpm start
+```
 
 ## License
 
