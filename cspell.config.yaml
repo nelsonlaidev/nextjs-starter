@@ -5,11 +5,13 @@ useGitignore: true
 ignorePaths:
   - .git
   - pnpm-lock.yaml
+dictionaries:
+  - npm
+  - softwareTerms
+  - fullstack
+  - html
+  - css
 words:
   - bradlc
-  - commitlint
   - dbaeumer
-  - esbenp
-  - knip
   - nelsonlaidev
-  - nvmrc
