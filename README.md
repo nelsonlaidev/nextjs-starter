@@ -4,7 +4,7 @@ This is a Next.js starter template that includes basic configurations and struct
 
 ## What's Included
 
-- Next.js 15
+- Next.js 16
 - React 19
 - TailwindCSS v4
 
@@ -19,7 +19,7 @@ This is a Next.js starter template that includes basic configurations and struct
 - .npmrc: npm configuration
 - .nvmrc: Node.js version management
 - commitlint.config.ts: Git commit message linting
-- husky: Git hooks for code quality
+- lefthook.yml: Git hooks for code quality
 
 ## Project Structure
 
