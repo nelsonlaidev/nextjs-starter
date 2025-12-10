@@ -10,7 +10,7 @@
     "check:knip": "knip",
     "check:spelling": "cspell --no-progress --no-summary --no-must-find-files --unique",
     "clean": "rm -rf .next",
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "format:check": "prettier --cache --check --ignore-path .gitignore --ignore-path .prettierignore .",
     "format:write": "prettier --cache --write --list-different --ignore-path .gitignore --ignore-path .prettierignore .",
     "preinstall": "npx --yes only-allow pnpm",
