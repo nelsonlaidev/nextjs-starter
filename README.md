@@ -1,84 +1,119 @@
-# Next.js Starter Template
+# Next.js Starter
 
-This is a Next.js starter template that includes basic configurations and structure to help you get started quickly. But it's quite opinionated since it used my own configuration presets, so feel free to customize it to your needs.
+Minimal starter for building an SSR-enabled React app with Next.js (App Router).
 
-## What's Included
+## Tech stack
 
-- Next.js 16
-- React 19
-- TailwindCSS v4
+- **Next.js 16** (App Router)
+- **React 19**
+- **Tailwind CSS v4**
+- **PostCSS** (Tailwind via `@tailwindcss/postcss`)
+- **TypeScript**
+- **ESLint + Prettier**
+- **Lefthook** (pre-commit formatting/linting)
+- **Knip** (dead-code / unused exports detection)
 
-## Configuration
+## Requirements
 
-- next.config.ts: Next.js configuration
-- tsconfig.json: TypeScript configuration
-- eslint.config.ts: ESLint configuration
-- prettier.config.js: Prettier configuration
-- cspell.config.yaml: Spell checking configuration
-- .editorconfig: Code style consistency
-- .npmrc: npm configuration
-- .nvmrc: Node.js version management
-- commitlint.config.ts: Git commit message linting
-- lefthook.yml: Git hooks for code quality
+- Node: see [`.nvmrc`](.nvmrc)
+- Package manager: **pnpm** (enforced via `preinstall` in [`package.json`](package.json))
 
-## Project Structure
+Notes:
 
-```
-src/
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
+- [`.npmrc`](.npmrc) sets `engine-strict=true` and `save-exact=true`.
+
+If you use `nvm`:
+
+```bash
+nvm install
+nvm use
 ```
 
-## Recommended VSCode Extensions
+If you don’t have pnpm yet:
 
-The following extensions are recommended for this project:
+```bash
+corepack enable
+corepack prepare pnpm@latest --activate
+```
 
-- `editorconfig.editorconfig`: EditorConfig
-- `dbaeumer.vscode-eslint`: ESLint
-- `esbenp.prettier-vscode`: Prettier
-- `bradlc.vscode-tailwindcss`: Tailwind CSS
-- `streetsidesoftware.code-spell-checker`: Code Spell Checker
-
-## GitHub Actions
-
-This project includes GitHub Actions workflows to automate code quality checks. The CI workflow runs on pull requests to the main branch and includes the following checks:
-
-- ESLint: Lints the code for style and syntax issues
-- TypeScript: Performs type checking
-- Prettier: Checks code formatting
-- Spelling: Checks for spelling errors
-- Knip: Scans for unused files, exports and dependencies
-
-These checks ensure that the code meets the project's quality standards before merging into the main branch.
-
-## Usage Guide
-
-1. Install dependencies using pnpm:
+## Getting started
 
 ```bash
 pnpm install
-```
-
-2. Start the development server:
-
-```bash
 pnpm dev
 ```
 
-3. Build the project:
+Open http://localhost:3000
+
+## Scripts
+
+All scripts live in [`package.json`](package.json).
+
+| Command                             | Description                                        |
+| ----------------------------------- | -------------------------------------------------- |
+| `pnpm dev`                          | Start Next.js dev server                           |
+| `pnpm build`                        | Build the app                                      |
+| `pnpm start`                        | Start the built server from `.next/`               |
+| `pnpm lint` / `pnpm lint:fix`       | Lint (and optionally auto-fix)                     |
+| `pnpm typecheck`                    | TypeScript typecheck (no emit)                     |
+| `pnpm format` / `pnpm format:check` | Format (and check) with Prettier                   |
+| `pnpm knip`                         | Find unused files/exports/dependencies             |
+| `pnpm check`                        | Run `lint` + `typecheck` + `format:check` + `knip` |
+| `pnpm clean`                        | Remove `.next`                                     |
+
+## Routing
+
+Routes are file-based under [`src/app/`](src/app):
+
+- Root layout: [`Layout`](src/app/layout.tsx)
+- Index route: [`Page`](src/app/page.tsx)
+
+Notes:
+
+- Add new pages by creating new folders/files inside [`src/app/`](src/app).
+- Metadata lives alongside routes (see `metadata` in [`src/app/layout.tsx`](src/app/layout.tsx)).
+
+## Styling
+
+Tailwind is enabled via:
+
+- [`src/styles/globals.css`](src/styles/globals.css) (Tailwind entry)
+- Imported in [`src/app/layout.tsx`](src/app/layout.tsx)
+- PostCSS plugin config in [`postcss.config.mjs`](postcss.config.mjs)
+
+## Git hooks
+
+Pre-commit hooks are configured via [`lefthook.yml`](lefthook.yml):
+
+- Formats staged files with Prettier
+- Auto-fixes staged files with ESLint
+
+Install hooks:
 
 ```bash
-pnpm build
+pnpm prepare
 ```
 
-4. Start the production server:
+## CI
 
-```bash
-pnpm start
+The CI workflow at [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs on pull requests to `main` and includes:
+
+- ESLint (`pnpm lint`)
+- TypeScript (`pnpm typecheck`)
+- Prettier (`pnpm format:check`)
+- Knip (`pnpm knip`)
+
+## Project structure
+
+```text
+src/
+  app/               # App Router routes
+    layout.tsx       # Root layout
+    page.tsx         # Index route
+  styles/
+    globals.css      # Tailwind entry
 ```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT — see [`LICENSE`](LICENSE).
