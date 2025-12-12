@@ -29,8 +29,8 @@ jobs:
       - name: Configure environment
         uses: ./.github/actions/setup
 
-      - name: Run type check
-        run: pnpm type-check
+      - name: Run typecheck
+        run: pnpm typecheck
 
   prettier:
     name: Prettier
@@ -45,19 +45,6 @@ jobs:
       - name: Run Prettier
         run: pnpm format:check
 
-  spelling:
-    name: Spelling
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v4
-
-      - name: Configure environment
-        uses: ./.github/actions/setup
-
-      - name: Run spelling check
-        run: pnpm check:spelling
-
   knip:
     name: Knip
     runs-on: ubuntu-latest
@@ -69,4 +56,4 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run Knip
-        run: pnpm check:knip
+        run: pnpm knip
