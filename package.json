@@ -20,29 +20,29 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "16.0.8",
-    "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "next": "16.0.10",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@nelsonlaidev/eslint-config": "2.3.3",
+    "@nelsonlaidev/eslint-config": "2.4.0",
     "@nelsonlaidev/prettier-config": "0.1.1",
-    "@nelsonlaidev/typescript-config": "1.0.0",
-    "@tailwindcss/postcss": "4.1.17",
-    "@types/node": "24.10.2",
+    "@nelsonlaidev/typescript-config": "1.1.0",
+    "@tailwindcss/postcss": "4.1.18",
+    "@types/node": "24.10.3",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.1",
-    "knip": "5.73.0",
+    "knip": "5.73.3",
     "lefthook": "2.0.9",
     "postcss-load-config": "6.0.1",
     "prettier": "3.7.4",
     "prettier-plugin-packagejson": "2.5.20",
-    "tailwindcss": "4.1.17",
+    "tailwindcss": "4.1.18",
     "typescript": "5.9.3"
   },
   "packageManager": "pnpm@10.25.0",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   }
 }
