@@ -8,5 +8,5 @@
     }
   },
   "extends": "@nelsonlaidev/typescript-config/nextjs.json",
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"]
 }
