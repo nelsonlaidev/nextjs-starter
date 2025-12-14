@@ -19,8 +19,8 @@ importers:
         version: 19.2.3(react@19.2.3)
     devDependencies:
       '@nelsonlaidev/eslint-config':
-        specifier: 2.4.2
-        version: 2.4.2(@typescript-eslint/utils@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)(tailwindcss@4.1.18)(typescript@5.9.3)
+        specifier: 2.4.4
+        version: 2.4.4(@typescript-eslint/utils@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)(tailwindcss@4.1.18)(typescript@5.9.3)
       '@nelsonlaidev/prettier-config':
         specifier: 0.1.1
         version: 0.1.1(prettier-plugin-packagejson@2.5.20(prettier@3.7.4))(prettier@3.7.4)
@@ -31,8 +31,8 @@ importers:
         specifier: 4.1.18
         version: 4.1.18
       '@types/node':
-        specifier: 24.10.3
-        version: 24.10.3
+        specifier: 24.10.4
+        version: 24.10.4
       '@types/react':
         specifier: 19.2.7
         version: 19.2.7
@@ -44,7 +44,7 @@ importers:
         version: 9.39.2(jiti@2.6.1)
       knip:
         specifier: 5.73.4
-        version: 5.73.4(@types/node@24.10.3)(typescript@5.9.3)
+        version: 5.73.4(@types/node@24.10.4)(typescript@5.9.3)
       lefthook:
         specifier: 2.0.11
         version: 2.0.11
@@ -226,10 +226,6 @@ packages:
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/js@9.39.1':
-    resolution: {integrity: sha512-S26Stp4zCy88tH94QbBv3XCuzRQiZ9yXofEILmglYTh/Ug/a9/umqvgFtYBAo3Lp0nsI/5/qH1CCrbdK3AP1Tw==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
   '@eslint/js@9.39.2':
     resolution: {integrity: sha512-q1mjIoW1VX4IvSocvM/vbTiveKC4k9eLrajNEuSsmjymSDEbpGddtpfOoN7YGAqBK3NG+uqo8ia4PDTt8buCYA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -403,8 +399,8 @@ packages:
   '@napi-rs/wasm-runtime@1.1.0':
     resolution: {integrity: sha512-Fq6DJW+Bb5jaWE69/qOE0D1TUN9+6uWhCeZpdnSBk14pjLcCWR7Q8n49PTSPHazM37JqrsdpEthXy2xn6jWWiA==}
 
-  '@nelsonlaidev/eslint-config@2.4.2':
-    resolution: {integrity: sha512-UNwu2Wf0NDpFVAsRziKFksv1Vr7YkraWEN1bmYMba/8e4IW9bz09rUWowjDH5YQMIBRuhEKya9UWYu0O/jaOQA==}
+  '@nelsonlaidev/eslint-config@2.4.4':
+    resolution: {integrity: sha512-C+OyUv/KeE8wtknxBXJTszYm8DDYSMtgHoVnIzj0P2K+9M7aQBRIeqzAAFFNlGO2/jssXBRBMrrKX/qLEoSwhQ==}
     peerDependencies:
       eslint: '>=9.0.0'
 
@@ -693,8 +689,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@24.10.3':
-    resolution: {integrity: sha512-gqkrWUsS8hcm0r44yn7/xZeV1ERva/nLgrLxFRUGb7aoNMIJfZJ3AC261zDQuOAKC7MiXai1WCpYc48jAHoShQ==}
+  '@types/node@24.10.4':
+    resolution: {integrity: sha512-vnDVpYPMzs4wunl27jHrfmwojOGKya0xyM3sH+UE5iv5uPS6vX7UIoh6m+vQc5LGBq52HBKPIn/zcSZVzeDEZg==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -2608,8 +2604,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.39.1': {}
-
   '@eslint/js@9.39.2': {}
 
   '@eslint/object-schema@2.1.7': {}
@@ -2745,11 +2739,11 @@ snapshots:
       '@tybys/wasm-util': 0.10.1
     optional: true
 
-  '@nelsonlaidev/eslint-config@2.4.2(@typescript-eslint/utils@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)(tailwindcss@4.1.18)(typescript@5.9.3)':
+  '@nelsonlaidev/eslint-config@2.4.4(@typescript-eslint/utils@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)(tailwindcss@4.1.18)(typescript@5.9.3)':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.5.0(eslint@9.39.2(jiti@2.6.1))
       '@eslint-react/eslint-plugin': 2.3.5(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
-      '@eslint/js': 9.39.1
+      '@eslint/js': 9.39.2
       '@next/eslint-plugin-next': 16.0.3
       '@stylistic/eslint-plugin': 5.5.0(eslint@9.39.2(jiti@2.6.1))
       '@typescript-eslint/eslint-plugin': 8.46.4(@typescript-eslint/parser@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
@@ -2989,7 +2983,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@24.10.3':
+  '@types/node@24.10.4':
     dependencies:
       undici-types: 7.16.0
 
@@ -4109,10 +4103,10 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  knip@5.73.4(@types/node@24.10.3)(typescript@5.9.3):
+  knip@5.73.4(@types/node@24.10.4)(typescript@5.9.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
-      '@types/node': 24.10.3
+      '@types/node': 24.10.4
       fast-glob: 3.3.3
       formatly: 0.3.0
       jiti: 2.6.1
