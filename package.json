@@ -26,7 +26,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@nelsonlaidev/eslint-config": "2.4.4",
+    "@nelsonlaidev/eslint-config": "2.4.5",
     "@nelsonlaidev/prettier-config": "0.1.1",
     "@nelsonlaidev/typescript-config": "1.1.1",
     "@tailwindcss/postcss": "4.1.18",

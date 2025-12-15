@@ -19,8 +19,8 @@ importers:
         version: 19.2.3(react@19.2.3)
     devDependencies:
       '@nelsonlaidev/eslint-config':
-        specifier: 2.4.4
-        version: 2.4.4(@typescript-eslint/utils@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)(tailwindcss@4.1.18)(typescript@5.9.3)
+        specifier: 2.4.5
+        version: 2.4.5(@typescript-eslint/utils@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)(tailwindcss@4.1.18)(typescript@5.9.3)
       '@nelsonlaidev/prettier-config':
         specifier: 0.1.1
         version: 0.1.1(prettier-plugin-packagejson@2.5.20(prettier@3.7.4))(prettier@3.7.4)
@@ -399,8 +399,8 @@ packages:
   '@napi-rs/wasm-runtime@1.1.0':
     resolution: {integrity: sha512-Fq6DJW+Bb5jaWE69/qOE0D1TUN9+6uWhCeZpdnSBk14pjLcCWR7Q8n49PTSPHazM37JqrsdpEthXy2xn6jWWiA==}
 
-  '@nelsonlaidev/eslint-config@2.4.4':
-    resolution: {integrity: sha512-C+OyUv/KeE8wtknxBXJTszYm8DDYSMtgHoVnIzj0P2K+9M7aQBRIeqzAAFFNlGO2/jssXBRBMrrKX/qLEoSwhQ==}
+  '@nelsonlaidev/eslint-config@2.4.5':
+    resolution: {integrity: sha512-Rh3cW3KP9RW77ZumjygyG+zkT5YrzwFqPWEje7S8PP7rVdCdAKAeBTFpHc6/TexoXdGgT6wMBTPI6PqqxX5eiA==}
     peerDependencies:
       eslint: '>=9.0.0'
 
@@ -2739,7 +2739,7 @@ snapshots:
       '@tybys/wasm-util': 0.10.1
     optional: true
 
-  '@nelsonlaidev/eslint-config@2.4.4(@typescript-eslint/utils@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)(tailwindcss@4.1.18)(typescript@5.9.3)':
+  '@nelsonlaidev/eslint-config@2.4.5(@typescript-eslint/utils@8.46.4(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(prettier@3.7.4)(tailwindcss@4.1.18)(typescript@5.9.3)':
     dependencies:
       '@eslint-community/eslint-plugin-eslint-comments': 4.5.0(eslint@9.39.2(jiti@2.6.1))
       '@eslint-react/eslint-plugin': 2.3.5(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)

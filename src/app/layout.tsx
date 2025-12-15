@@ -17,7 +17,7 @@ interface LayoutProps {
   children: React.ReactNode
 }
 
-function Layout(props: Readonly<LayoutProps>) {
+function Layout(props: LayoutProps) {
   const { children } = props
 
   return (
