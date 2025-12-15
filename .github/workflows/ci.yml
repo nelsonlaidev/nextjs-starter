@@ -30,9 +30,6 @@ jobs:
       - name: Configure environment
         uses: ./.github/actions/setup
 
-      - name: Generate Next.js route types
-        run: pnpm typegen
-
       - name: Run typecheck
         run: pnpm typecheck
 
