@@ -21,29 +21,29 @@
     "typegen": "next typegen"
   },
   "dependencies": {
-    "next": "16.1.1",
+    "next": "16.1.4",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@nelsonlaidev/eslint-config": "2.4.5",
     "@nelsonlaidev/prettier-config": "0.1.1",
-    "@nelsonlaidev/typescript-config": "1.1.1",
+    "@nelsonlaidev/typescript-config": "1.2.0",
     "@tailwindcss/postcss": "4.1.18",
-    "@types/node": "24.10.4",
-    "@types/react": "19.2.7",
+    "@types/node": "24.10.9",
+    "@types/react": "19.2.9",
     "@types/react-dom": "19.2.3",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "9.39.2",
-    "knip": "5.77.0",
-    "lefthook": "2.0.12",
+    "knip": "5.82.1",
+    "lefthook": "2.0.15",
     "postcss-load-config": "6.0.1",
-    "prettier": "3.7.4",
-    "prettier-plugin-packagejson": "2.5.20",
+    "prettier": "3.8.1",
+    "prettier-plugin-packagejson": "3.0.0",
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.26.2",
+  "packageManager": "pnpm@10.28.1",
   "engines": {
     "node": ">=24"
   }
