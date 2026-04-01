@@ -1,5 +1,7 @@
 import { defineConfig } from '@nelsonlaidev/eslint-config'
 
 export default defineConfig({
-  tailwindEntryPoint: './src/styles/globals.css'
+  tailwindcss: {
+    entryPoint: './src/styles/globals.css',
+  },
 })

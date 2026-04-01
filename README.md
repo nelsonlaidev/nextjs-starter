@@ -16,7 +16,7 @@ Minimal starter for building an SSR-enabled React app with Next.js (App Router).
 ## Requirements
 
 - Node: see [`.nvmrc`](.nvmrc)
-- Package manager: **pnpm** (enforced via `preinstall` in [`package.json`](package.json))
+- Package manager: **bun** (enforced via `preinstall` in [`package.json`](package.json))
 
 Notes:
 
@@ -29,18 +29,17 @@ nvm install
 nvm use
 ```
 
-If you don’t have pnpm yet:
+If you don’t have bun yet:
 
 ```bash
-corepack enable
-corepack prepare pnpm@latest --activate
+curl -fsSL https://bun.com/install | bash
 ```
 
 ## Getting started
 
 ```bash
-pnpm install
-pnpm dev
+bun install
+bun dev
 ```
 
 Open http://localhost:3000
@@ -49,17 +48,17 @@ Open http://localhost:3000
 
 All scripts live in [`package.json`](package.json).
 
-| Command                             | Description                                        |
-| ----------------------------------- | -------------------------------------------------- |
-| `pnpm dev`                          | Start Next.js dev server                           |
-| `pnpm build`                        | Build the app                                      |
-| `pnpm start`                        | Start the built server from `.next/`               |
-| `pnpm lint` / `pnpm lint:fix`       | Lint (and optionally auto-fix)                     |
-| `pnpm typecheck`                    | TypeScript typecheck (no emit)                     |
-| `pnpm format` / `pnpm format:check` | Format (and check) with Prettier                   |
-| `pnpm knip`                         | Find unused files/exports/dependencies             |
-| `pnpm check`                        | Run `lint` + `typecheck` + `format:check` + `knip` |
-| `pnpm clean`                        | Remove `.next`                                     |
+| Command                           | Description                                        |
+| --------------------------------- | -------------------------------------------------- |
+| `bun dev`                         | Start Next.js dev server                           |
+| `bun run build`                   | Build the app                                      |
+| `bun start`                       | Start the built server from `.next/`               |
+| `bun lint` / `bun lint:fix`       | Lint (and optionally auto-fix)                     |
+| `bun typecheck`                   | TypeScript typecheck (no emit)                     |
+| `bun format` / `bun format:check` | Format (and check) with Prettier                   |
+| `bun knip`                        | Find unused files/exports/dependencies             |
+| `bun check`                       | Run `lint` + `typecheck` + `format:check` + `knip` |
+| `bun clean`                       | Remove `.next`                                     |
 
 ## Routing
 
@@ -91,17 +90,17 @@ Pre-commit hooks are configured via [`lefthook.yml`](lefthook.yml):
 Install hooks:
 
 ```bash
-pnpm prepare
+bun prepare
 ```
 
 ## CI
 
 The CI workflow at [`.github/workflows/ci.yml`](.github/workflows/ci.yml) runs on pull requests to `main` and includes:
 
-- ESLint (`pnpm lint`)
-- TypeScript (`pnpm typecheck`)
-- Prettier (`pnpm format:check`)
-- Knip (`pnpm knip`)
+- ESLint (`bun lint`)
+- TypeScript (`bun typecheck`)
+- Prettier (`bun format:check`)
+- Knip (`bun knip`)
 
 ## Project structure
 

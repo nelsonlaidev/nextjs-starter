@@ -1,22 +1,19 @@
 name: Setup
-description: Install Node.js, pnpm, and dependencies
+description: Install Node.js, bun, and dependencies
 
 runs:
   using: composite
   steps:
-    - name: Install pnpm
-      uses: pnpm/action-setup@v4
+    - name: Install bun
+      uses: oven-sh/setup-bun@v2
+      with:
+        bun-version: latest
 
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
-        node-version-file: '.nvmrc'
-        cache: 'pnpm'
+        node-version-file: 'package.json'
 
     - name: Install dependencies
       shell: bash
-      run: pnpm install --frozen-lockfile
-
-    - name: Generate Next.js route types
-      shell: bash
-      run: pnpm typegen
+      run: bun install --frozen-lockfile
