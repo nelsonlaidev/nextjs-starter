@@ -1,7 +1,7 @@
 import type { KnipConfig } from 'knip'
 
 const config: KnipConfig = {
-  ignoreDependencies: ['postcss']
+  ignoreDependencies: ['postcss'],
 }
 
 export default config

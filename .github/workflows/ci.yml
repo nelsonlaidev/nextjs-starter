@@ -7,8 +7,8 @@ on:
   pull_request:
 
 jobs:
-  eslint:
-    name: ESLint
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
@@ -18,7 +18,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run ESLint
-        run: pnpm lint
+        run: bun lint
 
   types:
     name: TypeScript
@@ -30,11 +30,11 @@ jobs:
       - name: Configure environment
         uses: ./.github/actions/setup
 
-      - name: Run typecheck
-        run: pnpm typecheck
+      - name: Run type check
+        run: bun typecheck
 
-  prettier:
-    name: Prettier
+  format:
+    name: Format
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
@@ -43,8 +43,8 @@ jobs:
       - name: Configure environment
         uses: ./.github/actions/setup
 
-      - name: Run Prettier
-        run: pnpm format:check
+      - name: Run Prettier format check
+        run: bun format:check
 
   knip:
     name: Knip
@@ -57,4 +57,4 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run Knip
-        run: pnpm knip
+        run: bun knip
